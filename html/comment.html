@@ -35,9 +35,7 @@
             ut sed consequatur impedit rem doloribus, nostrum nisi vero?</p>
     </div>
 
-    <p id="update-comment"></p>
-
-    <textarea name="" id="comment-now" cols="30" rows="10"></textarea>
+    <textarea name="" id="comment-text" cols="30" rows="10"></textarea>
     <br>
     <button id="post-btn">Post</button>
 
@@ -53,22 +51,75 @@
 
         // 1. add post button
 
-        document.getElementById('post-btn').addEventListener('click', function () {
-            // 2.comment
-            const comment = document.getElementById('comment-now');
+        // document.getElementById('post-btn').addEventListener('click', function () {
+        //     // 2.comment
+        //     const comment = document.getElementById('comment-now');
 
+        //     const newComment = document.createElement('p');
+        //     newComment.innerText = comment.value;
+        //     const commentContainer = document.getElementById('comment-container');
+        //     commentContainer.appendChild(newComment);
+        //     comment.value = '';
+
+        //     console.log(newComment);
+
+
+
+
+        // })
+
+
+        // //1 set btn
+
+        // document.getElementById('post-btn').addEventListener('click', function () {
+
+        //     //2. user comment
+        //     const commentText = document.getElementById('comment-text');
+
+        //     //3. create comment
+
+        //     const newComment = document.createElement('p');
+        //     newComment.innerText = commentText.value;
+
+        //     //4 append comment
+        //     // const commentContainer = document.getElementById('comment-container');
+        //     // commentContainer.appendChild(newComment);
+
+
+        //     //4. append comment
+
+        //     const commentContainer = document.getElementById('comment-container');
+        //     commentContainer.appendChild(newComment);
+
+        //     //5. remove inner text
+        //     commentText.value = '';
+
+        // })
+
+
+
+        //1. add btn 
+        document.getElementById('post-btn').addEventListener('click', function () {
+
+            //2.Comment box
+            const commentBox = document.getElementById('comment-text');
+
+            //3. new comment 
             const newComment = document.createElement('p');
-            newComment.innerText = comment.value;
+            newComment.innerText = commentBox.value;
+
+            //4.append comment box 
+
             const commentContainer = document.getElementById('comment-container');
             commentContainer.appendChild(newComment);
-            comment.value = '';
 
-            console.log(newComment);
+            // 5. clean  comment commentBox
 
-
+            commentBox.value = '';
 
 
         })
+
 
     </script>
 </body>
