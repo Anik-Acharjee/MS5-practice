@@ -11,6 +11,11 @@ document.getElementById('submit-btn').addEventListener('click', function () {
         window.location.href = 'html/banking.html';
     }
 
+});
 
+document.getElementById('deposit-btn').addEventListener('click', function () {
+
+    console.log(clicked);
 })
+
 
