@@ -8,7 +8,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const userPass = passFeild.value;
     if (userEmail == 'abc@gmail.com' && userPass == 123) {
 
-        window.location.href = 'html/banking.html';
+        window.location.href = 'banking.html';
     }
 
 });
